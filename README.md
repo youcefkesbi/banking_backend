@@ -1,55 +1,57 @@
 <h1>🏦 Banking System Full-Stack Application</h1>
----
+<hr>
 A full-stack banking application built with Spring Boot, React.js, and Supabase, featuring account management and transaction handling with a clean layered architecture and production deployment.
 
 <img width="1083" height="777" alt="Screenshot 2026-05-17 at 20 10 39" src="https://github.com/user-attachments/assets/c2337621-4edb-407e-825c-10c4b5045e62" />
 <img width="1073" height="778" alt="Screenshot 2026-05-17 at 20 10 48" src="https://github.com/user-attachments/assets/8cb6a4a3-85f0-48c8-8f5b-cc240cf16c27" />
 
-🚀 Live Demo
+<h2>🚀 Live Demo</h2>
 Frontend (Vercel): https://banking-frontend-red.vercel.app
 
 Backend (Railway): https://bankingbackend-production-c265.up.railway.app/api
 
-🧰 Tech Stack :
+<h2>🧰 Tech Stack :</h2>
 
-Backend :
+<h3>Backend :</h3>
 Spring Boot
 Spring Web
 Spring Data JPA
 Supabase (PostgreSQL)
 Maven
 
-Frontend :
+<h3>Frontend :</h3>
 React.js
 Axios
 React Router
-Database
+
+<h3>Database</h3>
 Supabase (PostgreSQL)
-Deployment
+
+<h3>Deployment</h3>
 Backend: Railway
 Frontend: Vercel
 
-📦 Features :
+<h2>📦 Features :</h2>
 
-👤 Account Management
+<h3>👤 Account Management</h3>
 Create bank accounts
 View account details
-Handle account validation
 
-💸 Transactions
+<h3>💸 Transactions</h3>
 Deposit money
 Withdraw money
 Transfer funds between accounts
 Transaction history tracking
 
-⚙️ Backend Architecture
+<h2>⚙️ Backend Architecture</h2>
 DTO pattern (Data Transfer Objects)
 Entity mapping layer
 Service-based business logic
 RESTful API controllers
 Global exception handling
+Account exception handling
 
-🧱 Project Structure
+<h2>🧱 Project Structure</h2>
 Backend (Spring Boot)
 src/main/java/com/example/banking
 ├── controller
