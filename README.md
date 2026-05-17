@@ -3,8 +3,9 @@
 A full-stack banking application built with Spring Boot, React.js, and Supabase, featuring account management and transaction handling with a clean layered architecture and production deployment.
 
 🚀 Live Demo
-Frontend (Vercel): https://frontend-link.vercel.app
-Backend (Railway): https://backend-link.up.railway.app
+Frontend (Vercel): https://banking-frontend-red.vercel.app
+
+Backend (Railway): https://bankingbackend-production-c265.up.railway.app
 
 🧰 Tech Stack
 Backend
