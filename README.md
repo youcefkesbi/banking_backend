@@ -1,23 +1,25 @@
-🏦 Banking System Full-Stack Application
-
+<h1>🏦 Banking System Full-Stack Application</h1>
+---
 A full-stack banking application built with Spring Boot, React.js, and Supabase, featuring account management and transaction handling with a clean layered architecture and production deployment.
 
-<img width="1073" height="778" alt="Screenshot 2026-05-17 at 20 10 48" src="https://github.com/user-attachments/assets/8cb6a4a3-85f0-48c8-8f5b-cc240cf16c27" />
 <img width="1083" height="777" alt="Screenshot 2026-05-17 at 20 10 39" src="https://github.com/user-attachments/assets/c2337621-4edb-407e-825c-10c4b5045e62" />
+<img width="1073" height="778" alt="Screenshot 2026-05-17 at 20 10 48" src="https://github.com/user-attachments/assets/8cb6a4a3-85f0-48c8-8f5b-cc240cf16c27" />
 
 🚀 Live Demo
 Frontend (Vercel): https://banking-frontend-red.vercel.app
 
-Backend (Railway): https://bankingbackend-production-c265.up.railway.app
+Backend (Railway): https://bankingbackend-production-c265.up.railway.app/api
 
-🧰 Tech Stack
-Backend
+🧰 Tech Stack :
+
+Backend :
 Spring Boot
 Spring Web
 Spring Data JPA
 Supabase (PostgreSQL)
 Maven
-Frontend
+
+Frontend :
 React.js
 Axios
 React Router
