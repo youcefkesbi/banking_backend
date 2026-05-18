@@ -51,9 +51,7 @@ Account exception handling
 src/main/java/com/example/banking
 
 ├── controller
-
 ├── service
-
 ├── dto
 
 ├── entity
