@@ -48,30 +48,57 @@ Account exception handling
 <h2>🧱 Project Structure</h2>
 
 <h3>Backend (Spring Boot)</h3>
-src/main/java/com/example/banking
 
-├── controller
-├── service
-├── dto
+```text
+src/main/java/com/banking_app/
+├── config                           # Configuration classes (CORS, security, app setup)
+│   └── WebConfig
+│
+├── controller                       # REST API endpoints (HTTP requests handling)
+│   └── AccountController
+│
+├── service                          # Business logic layer (core application logic)
+│   ├── AccountService
+│   └── impl
+│       └── AccountServiceImpl
+│
+├── dto                              # Data Transfer Objects (request/response models)
+│   ├── AccountDto
+│   ├── TransactionDto
+│   └── TransferFundDto
+│
+├── entity                           # Database models (JPA entities)
+│   ├── Account
+│   └── Transaction
+│
+├── mapper                           # Converts between entities and DTOs
+│   └── AccountMapper
+│
+├── repository                       # Database access layer (Spring Data JPA)
+│   ├── AccountRepository
+│   └── TransactionRepository
+│
+├── exception                        # Custom exceptions and global error handling
+│   ├── AccountException
+│   ├── ErrorDetails
+│   └── GlobalExceptionHandler
+│
+└── BankingAppApplication.java       # Main Spring Boot entry point
 
-├── entity
-
-├── mapper
-
-├── repository
-
-└── exception
+src/main/resources/
+└──application.properties            # Application configuration (DB, server port, JPA settings)
+.env                                 # Environment variables (API keys)
+pom.xml                              # Maven configuration and project dependencies
+```
 
 <h3>Frontend (React)</h3>
+
+```text
 src/
-
 ├── components
-
 ├── pages
-
-├── services (API calls)
-
-└── routes
+└── services (API calls)
+```
 
 <h2>🔌 API Overview</h2>
 
@@ -95,37 +122,40 @@ GET /api/transactions/{accountId}
 
 <h2>⚙️ Setup Instructions</h2>
 
-Backend
-git clone https://github.com/your-username/banking-backend.git
-cd banking-backend
+<h3>Backend</h3>
+```text
+git clone https://github.com/youcefkesbi/banking_backend.git
+cd banking_backend
 ./mvnw spring-boot:run
 
 Create a .env or configure:
 
-SUPABASE_URL=your_url
-SUPABASE_KEY=your_key
-DATABASE_URL=your_db_url
+DB_URL=your db url
+DB_USERNAME=your db username
+DB_PASSWORD=your db password
+```
 
-Frontend
-
-git clone https://github.com/your-username/banking-frontend.git
-cd banking-frontend
+<h3>Frontend</h3>
+```text
+git clone https://github.com/youcefkesbi/banking_frontend.git
+cd banking_frontend
 npm install
 npm run dev
 
 Create .env:
 
-VITE_API_URL=https://your-backend-url.up.railway.app
+VITE_API_URL=https://bankingbackend-production-c265.up.railway.app/api
+```
 
-🧠 Key Learnings
-Building scalable REST APIs with Spring Boot
-Structuring backend using DTO + service layers
-Handling financial transactions safely
-Connecting React frontend to REST backend
-Deploying full-stack apps (Railway + Vercel)
-Working with Supabase PostgreSQL in production
+<h2>🧠 Key Learnings</h2>
+- Building scalable REST APIs with Spring Boot.
+- Structuring backend using DTO + service layers.
+- Handling financial transactions safely.
+- Connecting React frontend to REST backend.
+- Deploying full-stack apps (Railway + Vercel).
+- Working with Supabase PostgreSQL in production.
 
-👨‍💻 Author
+<h2>👨‍💻 Author</h2>
 
 Youcef Kesbi
 
