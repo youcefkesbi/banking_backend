@@ -29,20 +29,29 @@ Frontend: Vercel
 
 <h3>👤 Account Management</h3>
 Create bank accounts
+
 View account details
 
 <h3>💸 Transactions</h3>
 Deposit money
+
 Withdraw money
+
 Transfer funds between accounts
+
 Transaction history tracking
 
 <h2>⚙️ Backend Architecture</h2>
 DTO pattern (Data Transfer Objects)
+
 Entity mapping layer
+
 Service-based business logic
+
 RESTful API controllers
+
 Global exception handling
+
 Account exception handling
 
 <h2>🧱 Project Structure</h2>
@@ -123,19 +132,20 @@ GET /api/transactions/{accountId}
 <h2>⚙️ Setup Instructions</h2>
 
 <h3>Backend</h3>
+
 ```text
 git clone https://github.com/youcefkesbi/banking_backend.git
 cd banking_backend
 ./mvnw spring-boot:run
 
 Create a .env or configure:
-
 DB_URL=your db url
 DB_USERNAME=your db username
 DB_PASSWORD=your db password
 ```
 
 <h3>Frontend</h3>
+
 ```text
 git clone https://github.com/youcefkesbi/banking_frontend.git
 cd banking_frontend
@@ -143,20 +153,11 @@ npm install
 npm run dev
 
 Create .env:
-
 VITE_API_URL=https://bankingbackend-production-c265.up.railway.app/api
 ```
-
-<h2>🧠 Key Learnings</h2>
-- Building scalable REST APIs with Spring Boot.
-- Structuring backend using DTO + service layers.
-- Handling financial transactions safely.
-- Connecting React frontend to REST backend.
-- Deploying full-stack apps (Railway + Vercel).
-- Working with Supabase PostgreSQL in production.
 
 <h2>👨‍💻 Author</h2>
 
 Youcef Kesbi
 
-Software Engineer, Passionate about backend systems and scalable web apps.
+Software Engineer, Passionate about building backend systems and scalable web apps.
