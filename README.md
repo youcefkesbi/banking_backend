@@ -13,7 +13,7 @@ Backend (Railway): https://bankingbackend-production-c265.up.railway.app/api
 <h2>🧰 Tech Stack :</h2>
 
 <h3>Backend :</h3>
-Spring Boot, Spring Web, Spring Data JPA, Maven
+Java 17, Spring Boot, Spring Web, Spring Data JPA, Hibernate, Maven, Jakarta EE, Lombok
 
 <h3>Frontend :</h3>
 React.js, CSS Modules, React hooks
@@ -22,26 +22,31 @@ React.js, CSS Modules, React hooks
 Supabase (PostgreSQL)
 
 <h3>Deployment</h3>
+
 Backend: Railway
+
 Frontend: Vercel
 
 <h2>📦 Features :</h2>
 
 <h3>👤 Account Management</h3>
-Create bank accounts
 
-View account details
+- Create bank accounts
+
+- View account details
 
 <h3>💸 Transactions</h3>
-Deposit money
 
-Withdraw money
+- Deposit money
 
-Transfer funds between accounts
+- Withdraw money
 
-Transaction history tracking
+- Transfer funds between accounts
+
+- Transaction history tracking
 
 <h2>⚙️ Backend Architecture</h2>
+
 DTO pattern (Data Transfer Objects)
 
 Entity mapping layer
